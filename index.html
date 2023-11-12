@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/styles.css"> 
+    <link rel="icon" type="image/x-icon" href="favicon.ico">      
+    <title>YouTalk | Главная</title>
+</head>
+<body class="max-w-screen-xl mx-auto px-2 h-screen">
+    <header id="header-deskctop" class="flex-b border-b h-16">         
+        <a class="w-[51px] h-[36px]" href="index.html"><img src="public/img/logo.png" alt="Logo - YouTalk"></a>
+        <nav class="hidden md:flex justify-between item-center">
+            <ul class="inline-flex items-center">
+                <li><a class="header-links" href="#">О нас</a></li>
+                <li><a class="header-links" href="#">Тарифы</a></li>
+                <li><a class="header-links" href="#">Для бизнеса</a></li>
+                <li><a class="header-links" href="#">Психологам</a></li>
+                <li><a class="header-links" href="#">Сертификат</a></li>
+                <li class="dropdown">
+                    <a class="header-links" href="#">                       
+                        <div class="flex items-center ">
+                            <span>Материалы</span>
+                            <span><svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg></span>                       
+                        </div>                                                                      
+                    </a>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                        <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Меню 1</a></li>
+                        <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Меню 2</a></li>
+                        <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Меню 3</a></li>
+                    </ul>                                       
+                </li>
+                <li><a class="header-links" href="#">FAQ</a></li>
+            </ul>
+
+            <ul class="inline-flex items-center">
+                <li><button class="header-buttons">Подобрать психолога</button></li>
+            </ul>
+        </nav>
+
+        <nav class="inline-block md:hidden">
+            <button id="btn-mobile">
+                <img id="btn-mobile-on" src="public/img/menu.png" class="h-9" alt="Menu">
+                <img id="btn-mobile-off" src="public/img/close.png" class="hide h-9" alt="Menu">                              
+            </button>         
+        </nav>                                        
+    </header>
+    <header id="header-mobile" class="mobile-menu bg-white/90 border-2 border-gray-400 rounded-lg px-3 py-3">
+        <ul class="">
+            <li><a class="header-links" href="#">О нас</a></li>
+            <li><a class="header-links" href="#">Тарифы</a></li>
+            <li><a class="header-links" href="#">Для бизнеса</a></li>
+            <li><a class="header-links" href="#">Психологам</a></li>
+            <li><a class="header-links" href="#">Сертификат</a></li>
+            <li class="dropdown">
+                <a class="header-links" href="#">                       
+                    <div class="flex items-center ">
+                        <span>Материалы</span>
+                        <span><svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg></span>                       
+                    </div>                                                                      
+                </a>
+                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                    <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Меню 1</a></li>
+                    <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Меню 2</a></li>
+                    <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Меню 3</a></li>
+                </ul>                 
+            </li>
+            <li><a class="header-links" href="#">FAQ</a></li>
+            <li class="py-2"></li>
+            <li><button class="header-buttons">Подобрать психолога</button></li>            
+        </ul>
+    </header>
+    <div class="">
+        <div class="py-4 flex items-center overflow-auto whitespace-nowrap">
+            <a class="bread-links" href="#">Главная</a>
+            <span class="px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>              
+            </span>        
+            <a class="bread-links" href="#">Блог</a>
+        </div>
+    </div>
+    <div class="">
+        <div class="py-4 flex items-center overflow-auto whitespace-nowrap">
+            <h1 class="h-title">Блог</h1>
+        </div>
+    </div>
+    <div class="w-full pb-4">     
+        <ul class="flex overflow-x-auto justify-between items-center space-x-2 h-16">
+            <li><a class="menu2-links flex-b w-16" href="#"><img src="public/img/menu-smile.png" class="h-4" alt="Smile"> <span>Все</span></a></li>
+            <li><a class="menu2-links" href="#">Самооценка и самовосприятие</a></li>
+            <li><a class="menu2-links flex-b w-16" href="#"><img src="public/img/menu-smile-2.png" class="h-4" alt="Smile"> <span>Self</span></a></li>
+            <li><a class="menu2-links" href="#">Чувства и эмоции</a></li>
+            <li><a class="menu2-links" href="#">Тревога</a></li>
+            <li><a class="menu2-links" href="#">Упражнения</a></li>
+            <li><a class="menu2-links" href="#">Психология питания</a></li>
+            <li><a class="menu2-links" href="#">Насилие</a></li>
+            <li><a class="menu2-links" href="#">Личное здоровье</a></li>
+        </ul>        
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">     
+        <div class="post relative">            
+            <a class="absolute top-2 left-2 post-links flex-b" href="#"><img src="public/img/menu-smile-2.png" class="h-4 pr-2" alt="Smile"> <span>Самооценка и самовосприятие</span></a>
+            <a class="absolute top-14 left-2 post-links flex-b" href="#"><img src="public/img/menu-smile-2.png" class="h-4 pr-2" alt="Smile"> <span>Self</span></a>
+            <img class="post-img" src="public/img/post-1-img-01.png" alt="Image 1">
+            <h2 class="post-title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+            <p class="post-author">Автор: Лиза Файнтух</p>
+            <p class="post-text">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+            <p class="post-date">21.08.2021</p>
+        </div>
+        <div class="post relative">
+            <a class="absolute top-2 left-2 post-links flex-b" href="#"><img src="public/img/menu-smile-2.png" class="h-4 pr-2" alt="Smile"> <span>Self</span></a>
+            <img class="post-img" src="public/img/post-1-img-02.png" alt="Image 2">
+            <h2 class="post-title">Как не утонуть в тревоге и управлять своими страхами</h2>
+            <p class="post-author">Автор: Екатерина Бельтюкова</p>
+            <p class="post-text">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+            <p class="post-date">11.08.2021</p>
+        </div>
+    </div>
+    <div class="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">     
+        <div class="post relative">            
+            <a class="absolute top-2 left-2 post-links flex-b" href="#"><img src="public/img/menu-smile-2.png" class="h-4 pr-2" alt="Smile"> <span>Самооценка и самовосприятие</span></a>
+            <a class="absolute top-14 left-2 post-links flex-b" href="#"><img src="public/img/menu-smile-2.png" class="h-4 pr-2" alt="Smile"> <span>Психология питания</span></a>
+            <img class="post-img" src="public/img/post-2-img-01.png" alt="Image 1">
+            <h2 class="post-title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+            <p class="post-author">Автор: Лиза Файнтух</p>
+            <p class="post-text">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+            <p class="post-date">21.08.2021</p>
+        </div>
+        <div class="post relative">
+            <a class="absolute top-2 left-2 post-links flex-b" href="#"><img src="public/img/menu-smile-2.png" class="h-4 pr-2" alt="Smile"> <span>Self</span></a>
+            <img class="post-img" src="public/img/post-2-img-02.png" alt="Image 2">
+            <h2 class="post-title">Как не утонуть в тревоге и управлять своими страхами</h2>
+            <p class="post-author">Автор: Екатерина Бельтюкова</p>
+            <p class="post-text">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+            <p class="post-date">11.08.2021</p>
+        </div>
+        <div class="post relative">
+            <a class="absolute top-2 left-2 post-links flex-b" href="#"><img src="public/img/menu-smile-2.png" class="h-4 pr-2" alt="Smile"> <span>Self</span></a>
+            <img class="post-img" src="public/img/post-2-img-03.png" alt="Image 3">
+            <h2 class="post-title">Как управлять своими эмоциями: 8 шагов</h2>
+            <p class="post-author">Автор: Екатерина Бельтюкова</p>
+            <p class="post-text">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+            <p class="post-date">07.08.2021</p>
+        </div>
+        <div class="post relative">            
+            <a class="absolute top-2 left-2 post-links flex-b" href="#"><img src="public/img/menu-smile-2.png" class="h-4 pr-2" alt="Smile"> <span>Self</span></a>
+            <img class="post-img" src="public/img/post-2-img-04.png" alt="Image 1">
+            <h2 class="post-title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+            <p class="post-author">Автор: Лиза Файнтух</p>
+            <p class="post-text">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+            <p class="post-date">21.08.2021</p>
+        </div>
+        <div class="post relative">
+            <a class="absolute top-2 left-2 post-links flex-b" href="#"><img src="public/img/menu-smile-2.png" class="h-4 pr-2" alt="Smile"> <span>Self</span></a>
+            <img class="post-img" src="public/img/post-2-img-05.png" alt="Image 2">
+            <h2 class="post-title">Как не утонуть в тревоге и управлять своими страхами</h2>
+            <p class="post-author">Автор: Екатерина Бельтюкова</p>
+            <p class="post-text">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+            <p class="post-date">11.08.2021</p>
+        </div>
+        <div class="post relative">
+            <a class="absolute top-2 left-2 post-links flex-b" href="#"><img src="public/img/menu-smile-2.png" class="h-4 pr-2" alt="Smile"> <span>Self</span></a>
+            <img class="post-img" src="public/img/post-2-img-06.png" alt="Image 3">
+            <h2 class="post-title">Как управлять своими эмоциями: 8 шагов</h2>
+            <p class="post-author">Автор: Екатерина Бельтюкова</p>
+            <p class="post-text">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+            <p class="post-date">07.08.2021</p>
+        </div>           
+    </div>
+    <div class="flex justify-center items-center">     
+        <button class="post-btn-load">Ещё</button>
+    </div>
+    <footer>
+        <div class="md:flex md:space-x-8">
+            <div class="w-full md:w-1/4">                
+                <ul>
+                    <li><a class="footer-links" href="#">О нас</a></li>
+                    <li><a class="footer-links" href="#">Тарифы</a></li>
+                    <li><a class="footer-links" href="#">Для бизнеса</a></li>
+                    <li><a class="footer-links" href="#">Психологам</a></li>
+                    <li><a class="footer-links" href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="w-full mt-4 md:mt-0 md:w-1/4">                
+                <ul>
+                    <li><a class="footer-links" href="#">Блог</a></li>
+                    <li><a class="footer-links" href="#">Вебинары</a></li>
+                    <li><a class="footer-links" href="#">Подкаст</a></li>
+                    <li><a class="footer-links" href="#">Сертификат</a></li>
+                    <li><a class="footer-links" href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <form class="footer-form w-full mt-4 md:mt-0 md:w-2/4">
+                <h2 class="footer-form-h2">Одно письмо в неделю со свежими новостями и акциями</h2>
+                <div class="footer-mod">
+                    <input class="footer-form-input" type="text" name="email" id="email" placeholder="Ваш e-mail">
+                    <button class="footer-form-button"><img src="public/img/footer-btn.png" alt="Send"></button>
+                </div>                
+                <p class="footer-form-p">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности</p>
+            </form>
+
+            <div class="w-full mt-4 md:mt-0 md:w-1/4">
+                <div>
+                    <img src="public/img/footer-logo.png" alt="Logo">
+                </div>
+                <div class="footer-social">
+                    <a href="#"><img src="public/img/social-vk.png" alt="VK"></a>
+                    <a href="#"><img src="public/img/social-tg.png" alt="TG"></a>
+                    <a href="#"><img src="public/img/social-tw.png" alt="TW"></a>
+                    <a href="#"><img src="public/img/social-dz.png" alt="DZ"></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 py-4 md:flex md:justify-start md:items-center md:space-x-10 text-sm text-white text-opacity-70 border-t border-[#9D9D9D]">
+            <div>©Youtalk, 2018 – 2022</div>
+            <div><a href="#">Юридические документы</a></div>
+            <div><a href="#">Способы оплаты</a></div>
+        </div>
+    </footer>
+<div id="back-to-top" class="back-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false">
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z" />
+    </svg>    
+</div>
+<script src="public/js/script.js"></script>
+</body>
+</html>

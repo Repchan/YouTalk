@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "MontserratReg";
+  src: 
+    url("../public/font/Montserrat/MontserratRegular.ttf") format("truetype"),
+    url("../public/font/Montserrat/MontserratRegular.woff") format("woff"),
+    url("../public/font/Montserrat/MontserratRegular.woff2") format("woff2"),
+    url("../public/font/Montserrat/MontserratRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratItalic";
+  src: 
+    url("../public/font/Montserrat/MontserratItalic.ttf") format("truetype"),
+    url("../public/font/Montserrat/MontserratItalic.woff") format("woff"),
+    url("../public/font/Montserrat/MontserratItalic.woff2") format("woff2"),
+    url("../public/font/Montserrat/MontserratItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MontserratBold";
+  src: 
+    url("../public/font/Montserrat/MontserratBold.ttf") format("truetype"),
+    url("../public/font/Montserrat/MontserratBold.woff") format("woff"),
+    url("../public/font/Montserrat/MontserratBold.woff2") format("woff2"),
+    url("../public/font/Montserrat/MontserratBold.otf") format("opentype");
+  font-weight: 900;
+  font-style: bold;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "MontserratReg", Arial, Helvetica, sans-serif;
+}
+
+.hide{          
+    display: none;    
+}
+
+.show{    
+    display: block;
+}
+
+.flex-b{
+  @apply flex justify-between items-center
+}
+
+
+.header-links{
+    @apply inline-block py-3 px-2 text-sm text-[#333333] border-b-2 border-transparent hover:text-[#2963A3] hover:border-[#2963A3] transition-all duration-300
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+@layer components {
+  .header-buttons{
+      
+      @apply ml-2 py-2 px-5 text-base font-bold bg-[#E3F5F5] text-[#03B2A5] hover:bg-gray-600 transition-all duration-200 active:bg-gray-400        
+  }
+
+  .mobile-menu{
+      transition: all 300ms linear; 
+      display: none; 
+      opacity: 0;    
+      position: absolute;
+      top: 65px;
+      width: 95%;
+      z-index: 9999;                  
+  }
+}
+
+.mobile-menu-show {    
+  display: block;
+  animation: fadeInFromNone 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.mobile-menu-hide {    
+  animation: fadeOutFromBlock 0.5s ease-in-out;
+}
+
+
+
+.bread-links{
+    @apply text-[#333333] text-xs hover:text-gray-900 hover:bg-gray-200 transition-all duration-300
+}
+
+.h-title{  
+  font-family: "MontserratBold", Arial, Helvetica, sans-serif;
+  @apply text-5xl text-[#333333] font-bold
+}
+
+
+.menu2-links{
+  @apply whitespace-nowrap text-sm text-[#333333] p-2 border border-gray-300 rounded-3xl hover:bg-gray-200 transition-all duration-300
+}
+
+
+.post{
+  @apply rounded-xl border border-gray-300
+}
+
+.post-img{
+  @apply rounded-t-xl 
+}
+
+.post-title{
+  @apply text-lg font-bold p-2
+}
+
+.post-author{
+  @apply text-xs text-[#494949] p-2
+}
+
+.post-text{
+  @apply text-sm p-2
+}
+
+.post-date{
+  @apply text-xs text-[#868686] p-2 pt-10
+}
+
+.post-links{
+  @apply whitespace-nowrap text-sm font-semibold text-[#333333] p-2 bg-white bg-opacity-70 border border-gray-300 rounded-3xl hover:bg-gray-400 transition-all duration-300
+}
+
+.post-btn-load{
+  @apply px-24 py-3 bg-[#35B3A9] text-base font-bold text-center text-white
+}
+
+.btn{
+  @apply bg-[#35B3A9] text-base font-bold text-center text-white hover:bg-opacity-30 transition-all duration-300
+}
+
+
+.list-item{
+  @apply flex justify-start items-center space-x-2 py-1
+}
+
+.point-green{
+  @apply rounded-full bg-[#35B3A9] h-2 w-2
+}
+
+.item-micro{
+  @apply text-xs text-[#333333] absolute
+}
+
+
+footer{
+  @apply mt-20 p-5 bg-[#2963A3]
+}
+
+.footer-links{
+    @apply inline-block text-white text-base font-bold py-2 hover:underline transition-all duration-300
+}
+
+.footer-form{
+
+}
+
+.footer-form-h2{
+  @apply pb-2 text-white text-lg font-bold
+}
+
+.footer-mod{
+  @apply flex
+}
+
+.footer-form-input{
+  @apply bg-white p-3 text-sm rounded-l-md
+}
+
+.footer-form-button{
+  @apply bg-[#16C8BB] rounded-r-md px-4 
+}
+.footer-form-button img{
+  @apply h-6
+}
+
+.footer-form-p{
+  @apply py-2 text-white text-opacity-70 text-xs
+}
+
+.footer-social{
+  @apply pt-6 flex space-x-2 items-center justify-start
+}
+.footer-social img{
+  @apply h-8
+}
+
+
+
+@keyframes fadeInFromNone {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+@keyframes fadeOutFromBlock {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+}
+
+/* #################################### */
+/* Back on top */
+.back-to-top {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #179705ab;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 85, 0.5);
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9999;
+  }
+  
+  .back-to-top span {
+    max-width: 35px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .back-to-top span img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    max-width: 100%;
+  }
+  
+  .back-to-top:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 17, 0.8);
+    background-color: #019b86c4;
+  }
+  
+  .back-to-top:hover span {
+    transform: rotate(-360deg);
+  }
+  
+  .back-to-top-active {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+/* #################################### */
+
+
+
+  
